@@ -1,0 +1,29 @@
+body {
+    font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+}
+
+.node {
+	background: #fff;
+    border: 1px solid black;
+	margin: 5px 20px;
+}
+
+.expander {
+	cursor: pointer;
+}
+
+.directory.ui-droppable-hover {
+	background: #faa;
+}
+
+.options {
+	color: #ccc;
+}
+
+.options span {
+	cursor: pointer;
+}
+
+.options span:hover {
+	color: #f88;
+}
