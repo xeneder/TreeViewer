@@ -172,11 +172,7 @@ function setHandlers($node) {
 		console.log($node.attr('path'));
 		$(this).children('.delete-option').click(function() {
 			nodeRefresher.callDelete($node.attr('path'));
-			if ($node.hasClass('directory')) {
-				nodeRefresher.callFetchAndUpdate(false, $node);
-			} else {
-				nodeRefresher.callFetchAndUpdate(false, $node.parent());
-			}
+			nodeRefresher.callFetchAndUpdate(false, $node.parent());
 		});
 		$(this).children('.add-file-option').click(function() {
 			$node.append('<input type="text" class="new-file-name" placeholder="Enter new file name..."><input class="new-file-submit" type="submit" value="Submit">');
